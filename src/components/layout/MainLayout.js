@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Layout, Menu, Button, Image } from 'antd';
+import { Layout, Menu, Button, Image, Row } from 'antd';
 import {
   MenuUnfoldOutlined,
   MenuFoldOutlined,
@@ -8,6 +8,7 @@ import {
   CloseOutlined
 } from '@ant-design/icons';
 import '../../css/layout.css'
+import hambur from '../../static/image/hambur.png';
 
 const { Header, Sider, Content } = Layout;
 
@@ -34,10 +35,12 @@ const MainLayout = ({ children }) => {
       </Sider>
       <Layout className="site-layout">
         <Header className="site-layout-header-background" style={{ padding: 0 }}>
-          <Button className="trigger" icon={collapsed ? <Image src="../../static/image/hambur.png" /> : <CloseOutlined className="bg-primary" />} onClick={toggle} />
-          <Button type="primary" shape="round" size='large' className="primary-custom">
-          Connect Wallet
-        </Button>
+          <Row justify="space-between" align="center">
+            <Button className="trigger" icon={collapsed ? <Image src={hambur} /> : <CloseOutlined className="bg-primary" />} onClick={toggle} />
+            <Button type="primary" shape="round" size='large' className="primary-custom">
+            Connect Wallet
+          </Button>
+          </Row>
         </Header>
         <Content
           className="site-layout-content-background"

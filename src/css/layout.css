@@ -4,7 +4,9 @@
   line-height: 64px;
   cursor: pointer;
   transition: color 0.3s;
-  border: none;
+  border: none !important;
+  background: transparent !important;
+  color: white;
 }
 
 .trigger:hover {
@@ -39,4 +41,8 @@
   background: linear-gradient(#000, #2B2B2B);
   border-color: #00FFC2;
   border-width: 2px;
+}
+
+.ant-menu-dark {
+  background: #004E48 !important;
 }
