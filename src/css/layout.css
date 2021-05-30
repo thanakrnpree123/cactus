@@ -52,13 +52,37 @@
 }
 
 .exchange{
-  position: absolute;
+  background: linear-gradient(180deg, #004E48 0%, #008177 100%);
+  margin: auto;
+  /* margin-top: 10%; */
+  /* padding: 5%; */
+  width: 30%;
+  border-radius: 30px;
+
+  /* height: 100vh; */
+  /* margin: 70% 0;
+              padding: 10%;
+              background-color: #244f57;
+              border: 2px solid white;
+              opacity: 0.9;
+              -webkit-box-shadow: 0 10px 6px -6px #777;
+              -moz-box-shadow: 0 10px 6px -6px #777;
+              box-shadow: 0 10px 6px -6px #777;
+              border-radius: 25px; */
+  /* position: absolute;
 width: 883px;
-height: 855px;
+
 left: 518px;
 top: 338px;
 
 background: linear-gradient(180deg, #004E48 0%, #008177 100%);
-border-radius: 89px;
+border-radius: 89px; */
+}
+.form-input{
+  width: 100%;
+  border-radius: 50px;
+}
+.ant-input-group > .ant-input:first-child, .ant-input-group-addon:first-child{
+  border-radius: 10px;
 }
 

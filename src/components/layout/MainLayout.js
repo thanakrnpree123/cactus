@@ -24,7 +24,7 @@ const MainLayout = ({ children }) => {
 
   return (
     <Router>
-    <Layout>
+    <Layout style={{ minHeight: "100vh" }}>
       <Sider width={250} trigger={null} collapsible collapsed={collapsed}>
         
         {/* <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}> */}
@@ -68,9 +68,6 @@ const MainLayout = ({ children }) => {
         </Header>
         <Content
           className="site-layout-content-background"
-          style={{
-            minHeight: '100vh',
-          }}
         >
           <Route path="/swap" component={SwapLayout} />
         </Content>
