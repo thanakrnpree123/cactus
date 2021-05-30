@@ -46,3 +46,19 @@
 .ant-menu-dark {
   background: #004E48 !important;
 }
+
+.logo2-1{
+  margin-left: 20%;
+}
+
+.exchange{
+  position: absolute;
+width: 883px;
+height: 855px;
+left: 518px;
+top: 338px;
+
+background: linear-gradient(180deg, #004E48 0%, #008177 100%);
+border-radius: 89px;
+}
+

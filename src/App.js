@@ -2,9 +2,20 @@
 import './App.css';
 import { Button } from 'antd';
 import Index from './pages/Index/index'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import SwapPage from './pages/Index/swap';
 
 function App() {
   return (
+    <div>
+    <Router>
+      <Route exact path="/" component={Index} />
+      <Route exact path="/swap" component={SwapPage} />
+      {/* <Route exact path="/userManagement" component={Home} />
+      <Route exact path="/details" component={Home} />
+      <Route exact path="/admin" component={Home} /> */}
+    </Router>
+  </div>
     // <div className="App">
     //   <header className="App-header">
     //     <img src={logo} className="App-logo" alt="logo" />
@@ -21,7 +32,7 @@ function App() {
     //     </a>
     //   </header>
     // </div>
-    <Index />
+    
   //   <div className="App">
   //   <Button type="primary">Button</Button>
   // </div>
